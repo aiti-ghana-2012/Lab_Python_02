@@ -5,7 +5,7 @@ Solutions for Part II - Computer Exercises
 
 
 
-theInput = int(raw_input("Enter an integer: "))
+theInput = int(input("Enter an integer: "))
 
 ## Question 5
 
@@ -13,64 +13,66 @@ theInput = int(raw_input("Enter an integer: "))
 # so we can use the return value of the %
 # operator directly as a condition
 if theInput % 2:
-	print 'odd'
+	print('odd')
 else:
-	print 'even'
+	print('even')
 
 
 ## Question 6
-print "--------"
+print("--------")
 
-# ages for my home
+# ages for my home country
 primarySchoolAge = 6
 legalVotingAge = 18
 presidentAge = 35
 retirementAge = 65
 
-givenAge = int(raw_input("Enter an age: "))
+givenAge = int(input("Enter an age: "))
 
 if givenAge < primarySchoolAge:
-	print "Too young"
+	print("Too young")
 
 if givenAge >= legalVotingAge:
-	print "Remember to vote!"
+	print("Remember to vote!")
 
 if givenAge >= presidentAge:
-	print "Vote for me!"
+	print("Vote for me!")
 else:
-	print "You can't be president"
+	print("You can't be president")
 
 if givenAge >= retirementAge:
-	print "Too old"
+	print("Too old")
 
 
 ## Question 7
-print "--------"
+print("--------")
 
 # with a for loop and range:
 for i in range(39,-1,-3):
-	print i
+	print(i)
 
 # with a while loop
 i = 39
 while i > -1:
-	print i
+	print(i)
 	i -= 3
 
 
 ## Question 8
-print "--------"
+print("--------")
 
-for i in range(6,31): #remember, the default step is 1, and the second argument is exclusive
+#remember, the default step is 1, and the second argument is exclusive
+
+for i in range(6,31):
 	if i % 2 and i % 3 and  i % 5:
-		print i	
+		print(i)
 
 ## Question 9
-print "--------"
+print("--------")
 
 n = 1
 while True:
 	if (79 * n) % 97 == 1:
 		break #this statement exits the loop, without executing the next one
 	n += 1
-print n
+print(n)
